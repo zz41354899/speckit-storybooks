@@ -1,0 +1,189 @@
+/* 響應式樣式 - 手機、平板、桌面 */
+
+/* 平板裝置 (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  :root {
+    --sidebar-width: 240px;
+    --spacing-xl: calc(var(--spacing-unit) * 4); /* 32px */
+  }
+  
+  .main-content {
+    padding: var(--spacing-lg);
+  }
+  
+  .content-section h1 {
+    font-size: var(--font-size-2xl);
+  }
+  
+  .content-section h2 {
+    font-size: var(--font-size-xl);
+  }
+}
+
+/* 手機裝置 (< 768px) */
+@media (max-width: 767px) {
+  :root {
+    --sidebar-width: 100%;
+    --font-size-base: 14px;
+    --spacing-xl: calc(var(--spacing-unit) * 3); /* 24px */
+  }
+  
+  /* Header 調整 */
+  .app-header {
+    padding: 0 var(--spacing-md);
+  }
+  
+  .app-header__logo {
+    font-size: var(--font-size-lg);
+  }
+  
+  .app-header__menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .app-header__github-btn {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: var(--font-size-xs);
+  }
+  
+  .app-header__github-btn span {
+    display: none; /* 隱藏文字，只顯示圖示 */
+  }
+  
+  /* Sidebar 轉為漢堡選單 */
+  .app-sidebar {
+    position: fixed;
+    left: 0;
+    top: var(--header-height);
+    bottom: 0;
+    width: 80%;
+    max-width: 300px;
+    transform: translateX(-100%);
+    transition: transform var(--transition-base);
+    box-shadow: var(--shadow-xl);
+    z-index: var(--z-modal);
+  }
+  
+  .app-sidebar.open {
+    transform: translateX(0);
+  }
+  
+  /* Sidebar 遮罩 */
+  .sidebar-overlay {
+    display: none;
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: calc(var(--z-modal) - 1);
+    opacity: 0;
+    transition: opacity var(--transition-base);
+  }
+  
+  .sidebar-overlay.visible {
+    display: block;
+    opacity: 1;
+  }
+  
+  /* MainContent 調整 */
+  .main-content {
+    margin-left: 0;
+    padding: var(--spacing-md);
+    margin-bottom: var(--footer-height);
+  }
+  
+  .content-section h1 {
+    font-size: var(--font-size-xl);
+  }
+  
+  .content-section h2 {
+    font-size: var(--font-size-lg);
+  }
+  
+  .content-section h3 {
+    font-size: var(--font-size-base);
+  }
+  
+  /* Footer 調整 */
+  .app-footer {
+    font-size: var(--font-size-xs);
+    padding: 0 var(--spacing-md);
+  }
+  
+  /* 程式碼區塊調整 */
+  .content-section pre {
+    font-size: var(--font-size-xs);
+    padding: var(--spacing-sm);
+  }
+}
+
+/* 超小螢幕 (< 375px) */
+@media (max-width: 374px) {
+  :root {
+    --spacing-md: calc(var(--spacing-unit) * 2); /* 16px */
+    --spacing-lg: calc(var(--spacing-unit) * 3); /* 24px */
+  }
+  
+  .app-header__logo {
+    font-size: var(--font-size-base);
+  }
+  
+  .main-content {
+    padding: var(--spacing-sm);
+  }
+}
+
+/* 大螢幕 (>= 1440px) */
+@media (min-width: 1440px) {
+  :root {
+    --sidebar-width: 320px;
+    --content-max-width: 1400px;
+  }
+  
+  .main-content {
+    padding: var(--spacing-2xl);
+  }
+}
+
+/* 列印樣式 */
+@media print {
+  .app-header,
+  .app-sidebar,
+  .app-footer,
+  .app-header__menu-btn,
+  .sidebar-overlay {
+    display: none !important;
+  }
+  
+  .main-content {
+    margin-left: 0;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  
+  .content-section a {
+    text-decoration: underline;
+    color: var(--color-text);
+  }
+  
+  .content-section a::after {
+    content: " (" attr(href) ")";
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+  }
+}
+
+/* 偏好減少動畫的使用者 */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -7,7 +7,7 @@ description: "Task list template for feature implementation"
 **Input**: Design documents from `/specs/[###-feature-name]/`
 **Prerequisites**: plan.md (required), spec.md (required for user stories), research.md, data-model.md, contracts/
 
-**Tests**: The examples below include test tasks. Tests are OPTIONAL - only include them if explicitly requested in the feature specification.
+**憲章提醒**：根據專案憲章，本專案不需要撰寫測試。以下範例中的測試任務僅供參考，實際任務清單中應移除所有測試相關任務。
 
 **Organization**: Tasks are grouped by user story to enable independent implementation and testing of each story.
 

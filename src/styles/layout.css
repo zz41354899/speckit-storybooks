@@ -1,0 +1,208 @@
+/* 佈局樣式 - Header、Sidebar、MainContent、Footer */
+
+/* 全域佈局容器 */
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* Header 樣式 */
+.app-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--header-height);
+  background-color: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--spacing-lg);
+  z-index: var(--z-fixed);
+  box-shadow: var(--shadow-sm);
+}
+
+.app-header__logo {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+}
+
+.app-header__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.app-header__github-btn {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-sm) var(--spacing-md);
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  transition: background-color var(--transition-fast);
+}
+
+.app-header__github-btn:hover {
+  background-color: var(--color-primary-hover);
+}
+
+/* 主要內容區域容器 */
+.app-main {
+  display: flex;
+  flex: 1;
+  margin-top: var(--header-height);
+}
+
+/* Sidebar 樣式 */
+.app-sidebar {
+  position: fixed;
+  left: 0;
+  top: var(--header-height);
+  bottom: var(--footer-height);
+  width: var(--sidebar-width);
+  background-color: var(--color-bg-secondary);
+  border-right: 1px solid var(--color-border);
+  overflow-y: auto;
+  padding: var(--spacing-lg) 0;
+  z-index: var(--z-sticky);
+}
+
+.app-sidebar__nav {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  padding: 0 var(--spacing-md);
+}
+
+/* MainContent 樣式 */
+.main-content {
+  flex: 1;
+  margin-left: var(--sidebar-width);
+  margin-bottom: var(--footer-height);
+  padding: var(--spacing-xl);
+  max-width: var(--content-max-width);
+}
+
+.main-content__section {
+  animation: fadeIn var(--transition-base);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Footer 樣式 */
+.app-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: var(--footer-height);
+  background-color: var(--color-bg-secondary);
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--spacing-lg);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-light);
+  z-index: var(--z-base);
+}
+
+/* 漢堡選單按鈕（手機版） */
+.app-header__menu-btn {
+  display: none;
+  padding: var(--spacing-sm);
+  color: var(--color-text);
+}
+
+/* 內容區塊通用樣式 */
+.content-section {
+  line-height: var(--line-height-relaxed);
+}
+
+.content-section h1 {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-lg);
+  color: var(--color-text);
+}
+
+.content-section h2 {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-semibold);
+  margin-top: var(--spacing-xl);
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text);
+}
+
+.content-section h3 {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-text);
+}
+
+.content-section p {
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text);
+}
+
+.content-section ul,
+.content-section ol {
+  margin-bottom: var(--spacing-md);
+  padding-left: var(--spacing-lg);
+  list-style: disc;
+}
+
+.content-section li {
+  margin-bottom: var(--spacing-sm);
+}
+
+.content-section a {
+  color: var(--color-primary);
+  text-decoration: underline;
+  transition: color var(--transition-fast);
+}
+
+.content-section a:hover {
+  color: var(--color-primary-hover);
+}
+
+.content-section code {
+  background-color: var(--color-bg-secondary);
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  font-family: 'Courier New', monospace;
+  font-size: var(--font-size-sm);
+}
+
+.content-section pre {
+  background-color: var(--color-bg-secondary);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+  margin-bottom: var(--spacing-md);
+}
+
+.content-section pre code {
+  background: none;
+  padding: 0;
+}

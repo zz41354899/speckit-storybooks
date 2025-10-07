@@ -1,30 +1,30 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+// 匯入佈局元件
+import AppHeader from './components/layout/AppHeader.vue';
+import AppSidebar from './components/layout/AppSidebar.vue';
+import MainContent from './components/layout/MainContent.vue';
+import AppFooter from './components/layout/AppFooter.vue';
 </script>
 
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div id="app">
+    <!-- Header -->
+    <AppHeader />
+    
+    <!-- 主要內容區域 -->
+    <div class="app-main">
+      <!-- Sidebar -->
+      <AppSidebar />
+      
+      <!-- 主要內容 -->
+      <MainContent />
+    </div>
+    
+    <!-- Footer -->
+    <AppFooter />
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
+<style>
+/* 全域樣式已在 main.js 中匯入 */
 </style>

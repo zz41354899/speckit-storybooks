@@ -31,7 +31,15 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+根據 `.specify/memory/constitution.md` 檢查以下項目：
+
+- [ ] **JavaScript 優先**：確認使用 JavaScript（ES6+），無 TypeScript
+- [ ] **測試政策**：確認不需要撰寫測試，不整合 ESLint
+- [ ] **命名規範**：所有變數、函式、檔案使用英文駝峰式命名
+- [ ] **正體中文文件**：程式碼註解、README、API 文件使用正體中文
+- [ ] **正體中文介面**：所有使用者介面文字與錯誤訊息使用正體中文
+- [ ] **響應式設計**：確認介面支援桌面、平板、手機裝置
+- [ ] **程式碼品質**：確認函式簡潔、命名清晰、適當註解
 
 ## Project Structure
 
