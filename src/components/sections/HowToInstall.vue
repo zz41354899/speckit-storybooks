@@ -2,9 +2,31 @@
 import { ExternalLink, Copy, Check } from 'lucide-vue-next';
 import { ref } from 'vue';
 import { contentSections } from '../../data/contentData';
+import Accordion from '../common/Accordion.vue';
+import AccordionGroup from '../common/AccordionGroup.vue';
 
 // 取得內容資料
 const content = contentSections['how-to-install'];
+
+// 常見問題資料
+const faqs = [
+  {
+    question: 'Q: Spec Kit 是免費的嗎？',
+    answer: 'Spec Kit 本身是開源工具，但需要搭配支援的 AI 編輯器使用。編輯器的收費方式請參考各編輯器的官方說明。'
+  },
+  {
+    question: 'Q: 可以在現有專案中使用 Spec Kit 嗎？',
+    answer: '可以！Spec Kit 可以在任何專案中使用，無論是新專案還是現有專案。它會在專案根目錄建立 <code>.specify</code> 目錄來儲存相關文件。'
+  },
+  {
+    question: 'Q: Spec Kit 支援哪些程式語言？',
+    answer: 'Spec Kit 支援所有主流程式語言，包括 JavaScript、TypeScript、Python、Java、Go、Rust 等。你可以在專案憲章中指定使用的語言。'
+  },
+  {
+    question: 'Q: 如果不喜歡 Spec Kit 產生的內容怎麼辦？',
+    answer: '所有產生的文件都是純文字檔案，你可以隨時手動編輯。Spec Kit 會尊重你的修改，不會覆蓋已修改的內容。'
+  }
+];
 
 // 複製狀態
 const copiedIndex = ref(null);
@@ -60,6 +82,21 @@ const copyCode = async (code, index) => {
           {{ example.description }}
         </p>
       </div>
+    </div>
+    
+    <!-- 常見問題 Accordion -->
+    <div class="faq-section">
+      <h3>常見問題</h3>
+      <AccordionGroup>
+        <Accordion 
+          v-for="(faq, index) in faqs" 
+          :key="index"
+          :title="faq.question"
+          :default-open="index === 0"
+        >
+          <p v-html="faq.answer"></p>
+        </Accordion>
+      </AccordionGroup>
     </div>
     
     <!-- 相關連結 -->

@@ -155,20 +155,6 @@ export const contentSections = {
         <li><strong>程式碼風格</strong>：縮排、括號位置等</li>
       </ul>
       
-      <h3>常見問題</h3>
-      
-      <h4>Q: Spec Kit 是免費的嗎？</h4>
-      <p>A: Spec Kit 本身是開源工具，但需要搭配支援的 AI 編輯器使用。編輯器的收費方式請參考各編輯器的官方說明。</p>
-      
-      <h4>Q: 可以在現有專案中使用 Spec Kit 嗎？</h4>
-      <p>A: 可以！Spec Kit 可以在任何專案中使用，無論是新專案還是現有專案。它會在專案根目錄建立 <code>.specify</code> 目錄來儲存相關文件。</p>
-      
-      <h4>Q: Spec Kit 支援哪些程式語言？</h4>
-      <p>A: Spec Kit 支援所有主流程式語言，包括 JavaScript、TypeScript、Python、Java、Go、Rust 等。你可以在專案憲章中指定使用的語言。</p>
-      
-      <h4>Q: 如果不喜歡 Spec Kit 產生的內容怎麼辦？</h4>
-      <p>A: 所有產生的文件都是純文字檔案，你可以隨時手動編輯。Spec Kit 會尊重你的修改，不會覆蓋已修改的內容。</p>
-      
       <h3>更多資源</h3>
       <p>查看官方 GitHub Repository 以獲取更多資訊：</p>
     `,
@@ -389,43 +375,6 @@ npm run storybook</code></pre>
         <li><strong>善用憲章</strong>：為專案設定開發規範，確保一致性</li>
         <li><strong>結合 Storybook</strong>：視覺化元件，提升團隊協作效率</li>
       </ol>
-      
-      <h3>常見問題</h3>
-      
-      <h4>Q: 如果需求不明確怎麼辦？</h4>
-      <p>A: 在 /specify 階段，AI 會詢問澄清問題。你也可以使用 <code>/speckit.clarify</code> 命令，系統會提出最多 5 個針對性問題幫助你釐清需求。建議在需求不明確時，先與團隊討論，再使用 Spec Kit 記錄共識。</p>
-      
-      <h4>Q: 可以跳過某些階段嗎？</h4>
-      <p>A: 不建議跳過。每個階段都有其價值，跳過可能導致後續開發問題。但如果你已有現成的規格或計畫，可以手動建立對應文件，Spec Kit 會讀取這些文件並繼續後續流程。</p>
-      
-      <h4>Q: 如何處理大型專案？</h4>
-      <p>A: 將大型專案拆分為多個功能，每個功能獨立執行 SSD 流程。使用 Git 分支管理不同功能的開發。建議：</p>
-      <ul>
-        <li>每個功能建立獨立的分支（例如：<code>feature/user-login</code>）</li>
-        <li>每個功能有獨立的規格文件目錄（例如：<code>specs/001-user-login/</code>）</li>
-        <li>功能完成後合併回主分支，保持主分支穩定</li>
-      </ul>
-      
-      <h4>Q: 團隊成員不熟悉 SSD 怎麼辦？</h4>
-      <p>A: 建議從小型專案開始練習，讓團隊成員熟悉流程。可以：</p>
-      <ul>
-        <li>舉辦內部工作坊，示範完整的 SSD 流程</li>
-        <li>建立團隊的最佳實踐文件</li>
-        <li>指定一位 SSD 專家協助團隊成員</li>
-        <li>定期檢視產生的文件，確保品質</li>
-      </ul>
-      
-      <h4>Q: 如何確保產生的程式碼品質？</h4>
-      <p>A: Spec Kit 產生的程式碼遵循最佳實踐，但仍需要：</p>
-      <ul>
-        <li>在專案憲章中明確定義程式碼標準</li>
-        <li>進行程式碼審查（Code Review）</li>
-        <li>撰寫測試確保功能正確</li>
-        <li>使用 Linter 與 Formatter 工具</li>
-      </ul>
-      
-      <h4>Q: 可以修改 Spec Kit 產生的文件嗎？</h4>
-      <p>A: 可以！所有文件都是純文字檔案，你可以隨時編輯。Spec Kit 會尊重你的修改，不會覆蓋已修改的內容。建議在修改後，確保文件之間的一致性。</p>
       
       <h3>進階技巧</h3>
       

@@ -393,3 +393,28 @@ src/
      - 提供實用建議與最佳實踐
      - 回答常見問題
    - **理由**：提供更完整、詳細的學習資源，讓使用者能深入理解 Spec Kit 與 SSD 開發流程
+
+8. **實作 Accordion 元件**：
+   - **新增元件**：
+     - `src/components/common/Accordion.vue` - 單一摺疊面板元件
+     - `src/components/common/AccordionGroup.vue` - 摺疊面板群組元件
+   - **應用範圍**：
+     - `src/components/sections/HowToInstall.vue` - 常見問題區塊（4 個問題）
+     - `src/components/sections/UserGuide.vue` - 常見問題區塊（6 個問題）
+   - **功能特色**：
+     - 點擊展開/收合
+     - 平滑動畫效果
+     - 使用 lucide-vue-next 的 ChevronDown 圖示
+     - 第一個問題預設展開
+     - 支援鍵盤導覽（無障礙設計）
+     - 懸停效果與視覺回饋
+   - **樣式設計**：
+     - 邊框與圓角設計
+     - 展開時標題背景變為主色調
+     - 圖示旋轉動畫（180度）
+     - 內容區域平滑展開/收合
+   - **資料管理**：
+     - 常見問題資料從 contentData.js 移至元件內部
+     - 使用陣列管理問題與答案
+     - 支援 HTML 內容渲染
+   - **理由**：提升使用者體驗，讓常見問題更易於瀏覽，節省頁面空間，提供更好的互動性
