@@ -13,7 +13,7 @@ const content = contentSections['ssd-principles'];
     <!-- 使用 v-html 渲染 HTML 內容 -->
     <div v-html="content.content"></div>
     
-    <!-- SSD 五大階段 -->
+    <!-- SDD 五大階段 -->
     <div class="ssd-phases">
       <div 
         v-for="phase in ssdPhases" 

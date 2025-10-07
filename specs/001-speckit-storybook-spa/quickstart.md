@@ -125,13 +125,13 @@ npm run preview
    - `WhatIsSpecKit.vue` - 📦 Spec Kit 是什麼
    - `HowToInstall.vue` - ⚙️ 如何安裝
    - `WhyStorybook.vue` - 📐 為何結合 Storybook
-   - `SsdPrinciples.vue` - 🧭 SSD 開發五大原則
+   - `SsdPrinciples.vue` - 🧭 SDD 開發五大原則
    - `UserGuide.vue` - 📘 使用者指引範例
 
 4. **資料與邏輯**
    - `src/data/navigationItems.js` - 導覽項目資料
    - `src/data/contentData.js` - 內容區塊資料
-   - `src/data/ssdPhases.js` - SSD 階段資料
+   - `src/data/ssdPhases.js` - SDD 階段資料
    - `src/composables/useNavigation.js` - 導覽邏輯
 
 5. **樣式**

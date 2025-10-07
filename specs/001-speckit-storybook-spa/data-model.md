@@ -56,7 +56,7 @@
 | `content` | String | ✅ | 主要內容（支援 HTML 或純文字） |
 | `links` | Array<Link> | ❌ | 相關連結列表 |
 | `codeExamples` | Array<CodeExample> | ❌ | 程式碼範例列表 |
-| `subsections` | Array<Subsection> | ❌ | 子區塊列表（如 SSD 五大階段） |
+| `subsections` | Array<Subsection> | ❌ | 子區塊列表（如 SDD 五大階段） |
 
 **範例**：
 
@@ -66,7 +66,7 @@
   title: 'Spec Kit 是什麼',
   content: `
     <p>Spec Kit 是一個協助開發團隊...</p>
-    <p>它遵循 SSD（Specification-Driven Development）原則...</p>
+    <p>它遵循 SDD（Specification-Driven Development）原則...</p>
   `,
   links: [
     {
@@ -152,7 +152,7 @@
 
 ### 5. Subsection（子區塊）
 
-代表內容區塊中的子章節（如 SSD 五大階段的每個階段）。
+代表內容區塊中的子章節（如 SDD 五大階段的每個階段）。
 
 **屬性**：
 
@@ -182,9 +182,9 @@
 
 ---
 
-### 6. SsdPhase（SSD 階段）
+### 6. SsdPhase（SDD 階段）
 
-代表 SSD 開發流程中的一個階段，為 Subsection 的特化版本。
+代表 SDD 開發流程中的一個階段，為 Subsection 的特化版本。
 
 **屬性**：
 
@@ -266,7 +266,7 @@ export const navigationItems = [
   },
   {
     id: 'ssd-principles',
-    label: '🧭 SSD 開發五大原則',
+    label: '🧭 SDD 開發五大原則',
     order: 4
   },
   {
@@ -290,9 +290,9 @@ export const contentSections = {
     title: 'Spec Kit 是什麼',
     content: `
       <h2>Spec Kit 簡介</h2>
-      <p>Spec Kit 是一個協助開發團隊實踐規格驅動開發（SSD）的工具集...</p>
+      <p>Spec Kit 是一個協助開發團隊實踐規格驅動開發（SDD）的工具集...</p>
       
-      <h3>SSD 精神</h3>
+      <h3>SDD 精神</h3>
       <p>規格驅動開發強調在撰寫程式碼前，先清楚定義功能需求與驗收標準...</p>
     `,
     links: [
@@ -336,7 +336,7 @@ export const contentSections = {
 
 ```javascript
 /**
- * SSD 五大開發階段資料
+ * SDD 五大開發階段資料
  */
 export const ssdPhases = [
   {

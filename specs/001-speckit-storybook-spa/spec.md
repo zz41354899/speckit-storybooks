@@ -3,7 +3,7 @@
 **Feature Branch**: `001-speckit-storybook-spa`  
 **Created**: 2025-10-07  
 **Status**: Draft  
-**Input**: User description: "請開發一個名為 speckit-storybook 的單頁式網站（SPA），作為 Spec Kit 安裝教學 與 SSD 開發觀念的整合說明平台。"
+**Input**: User description: "請開發一個名為 speckit-storybook 的單頁式網站（SPA），作為 Spec Kit 安裝教學 與 SDD 開發觀念的整合說明平台。"
 
 ## User Scenarios & Testing *(mandatory)*
 
@@ -18,25 +18,25 @@
 **Acceptance Scenarios**:
 
 1. **Given** 使用者首次造訪網站，**When** 頁面載入完成，**Then** 使用者看到包含 Logo、GitHub 連結按鈕的 Header，以及左側 Sidebar 導覽列
-2. **Given** 使用者在首頁，**When** 點擊 Sidebar 中的「📦 Spec Kit 是什麼」，**Then** 主要內容區顯示 Spec Kit 簡介與 SSD 精神說明
+2. **Given** 使用者在首頁，**When** 點擊 Sidebar 中的「📦 Spec Kit 是什麼」，**Then** 主要內容區顯示 Spec Kit 簡介與 SDD 精神說明
 3. **Given** 使用者想要安裝，**When** 點擊 Sidebar 中的「⚙️ 如何安裝」，**Then** 主要內容區顯示安裝步驟與 GitHub 連結（https://github.com/github/spec-kit）
 4. **Given** 使用者在任何頁面，**When** 點擊 Header 右上角的「GitHub Repository」按鈕，**Then** 在新分頁開啟 GitHub Repository 頁面
 
 ---
 
-### User Story 2 - 理解 SSD 五大開發階段 (Priority: P2)
+### User Story 2 - 理解 SDD 五大開發階段 (Priority: P2)
 
-使用者已經了解 Spec Kit 基本概念，希望深入學習 SSD 開發流程的五個階段，理解每個階段的目的與操作方式。
+使用者已經了解 Spec Kit 基本概念，希望深入學習 SDD 開發流程的五個階段，理解每個階段的目的與操作方式。
 
 **Why this priority**: 這是使用者從「知道」到「會用」的關鍵橋樑，幫助使用者建立完整的開發流程概念。
 
-**Independent Test**: 使用者點擊「🧭 SSD 開發五大原則」後，能夠看到 /specify、/plan、/task、/implement、/readme 五個階段的詳細說明，每個階段都有清楚的目的與操作說明。
+**Independent Test**: 使用者點擊「🧭 SDD 開發五大原則」後，能夠看到 /specify、/plan、/task、/implement、/readme 五個階段的詳細說明，每個階段都有清楚的目的與操作說明。
 
 **Acceptance Scenarios**:
 
-1. **Given** 使用者想了解開發流程，**When** 點擊 Sidebar 中的「🧭 SSD 開發五大原則」，**Then** 主要內容區依序顯示五個階段的說明
-2. **Given** 使用者閱讀 SSD 說明，**When** 瀏覽內容，**Then** 每個階段都包含：階段名稱、用途說明、操作方式
-3. **Given** 使用者在手機上瀏覽，**When** 查看 SSD 說明，**Then** 內容能夠正常顯示且易於閱讀
+1. **Given** 使用者想了解開發流程，**When** 點擊 Sidebar 中的「🧭 SDD 開發五大原則」，**Then** 主要內容區依序顯示五個階段的說明
+2. **Given** 使用者閱讀 SDD 說明，**When** 瀏覽內容，**Then** 每個階段都包含：階段名稱、用途說明、操作方式
+3. **Given** 使用者在手機上瀏覽，**When** 查看 SDD 說明，**Then** 內容能夠正常顯示且易於閱讀
 
 ---
 
@@ -46,12 +46,12 @@
 
 **Why this priority**: 這是進階概念，幫助使用者理解設計與開發協作的最佳實踐，但不影響基本使用。
 
-**Independent Test**: 使用者點擊「📐 為何結合 Storybook」後，能夠看到清楚的說明，理解 Storybook 如何讓 SSD 文件視覺化，以及對團隊協作的幫助。
+**Independent Test**: 使用者點擊「📐 為何結合 Storybook」後，能夠看到清楚的說明，理解 Storybook 如何讓 SDD 文件視覺化，以及對團隊協作的幫助。
 
 **Acceptance Scenarios**:
 
 1. **Given** 使用者想了解 Storybook 整合，**When** 點擊 Sidebar 中的「📐 為何結合 Storybook」，**Then** 主要內容區顯示 Storybook 整合說明
-2. **Given** 使用者閱讀說明，**When** 瀏覽內容，**Then** 內容包含：設計與開發共用視覺規格的重要性、Storybook 如何視覺化 SSD 文件、對團隊協作的好處
+2. **Given** 使用者閱讀說明，**When** 瀏覽內容，**Then** 內容包含：設計與開發共用視覺規格的重要性、Storybook 如何視覺化 SDD 文件、對團隊協作的好處
 
 ---
 
@@ -94,17 +94,17 @@
 - **FR-005**: Sidebar **必須**包含「📦 Spec Kit 是什麼」導覽項目
 - **FR-006**: Sidebar **必須**包含「⚙️ 如何安裝」導覽項目
 - **FR-007**: Sidebar **必須**包含「📐 為何結合 Storybook」導覽項目
-- **FR-008**: Sidebar **必須**包含「🧭 SSD 開發五大原則」導覽項目
+- **FR-008**: Sidebar **必須**包含「🧭 SDD 開發五大原則」導覽項目
 - **FR-009**: Sidebar **必須**包含「📘 使用者指引範例」導覽項目
 - **FR-010**: 使用者點擊 Sidebar 項目時，主要內容區**必須**切換至對應內容
 
 #### 內容要求
 
-- **FR-011**: 「Spec Kit 是什麼」區塊**必須**包含 Spec Kit 用途簡介與 SSD 精神說明
+- **FR-011**: 「Spec Kit 是什麼」區塊**必須**包含 Spec Kit 用途簡介與 SDD 精神說明
 - **FR-012**: 「如何安裝」區塊**必須**包含 GitHub Repository 連結（https://github.com/github/spec-kit）與正體中文安裝步驟說明
-- **FR-013**: 「為何結合 Storybook」區塊**必須**說明設計與開發共用視覺規格的重要性，以及 Storybook 如何視覺化 SSD 文件
-- **FR-014**: 「SSD 開發五大原則」區塊**必須**依序說明 /specify、/plan、/task、/implement、/readme 五個階段
-- **FR-015**: 每個 SSD 階段說明**必須**包含：階段名稱、用途說明、操作方式
+- **FR-013**: 「為何結合 Storybook」區塊**必須**說明設計與開發共用視覺規格的重要性，以及 Storybook 如何視覺化 SDD 文件
+- **FR-014**: 「SDD 開發五大原則」區塊**必須**依序說明 /specify、/plan、/task、/implement、/readme 五個階段
+- **FR-015**: 每個 SDD 階段說明**必須**包含：階段名稱、用途說明、操作方式
 - **FR-016**: 「使用者指引範例」區塊**必須**展示一個完整的實作範例，涵蓋五個階段的實際輸出
 
 #### 語言與文字
@@ -132,18 +132,18 @@
 
 - **導覽項目（Navigation Item）**：代表 Sidebar 中的一個可點擊項目，包含：項目名稱（含 emoji 圖示）、對應的內容區塊識別碼、顯示順序
 - **內容區塊（Content Section）**：代表主要內容區中的一個完整說明區塊，包含：區塊標題、正體中文內容、可能包含的連結或程式碼範例
-- **SSD 階段（SSD Phase）**：代表 SSD 開發流程中的一個階段，包含：階段名稱（/specify、/plan、/task、/implement、/readme）、階段用途、操作說明
+- **SDD 階段（SDD Phase）**：代表 SDD 開發流程中的一個階段，包含：階段名稱（/specify、/plan、/task、/implement、/readme）、階段用途、操作說明
 
 ## Success Criteria *(mandatory)*
 
 ### Measurable Outcomes
 
 - **SC-001**: 使用者能夠在 5 分鐘內完成從開啟網站到理解 Spec Kit 基本概念與安裝方式
-- **SC-002**: 使用者能夠在 10 分鐘內理解 SSD 五大開發階段的完整流程
+- **SC-002**: 使用者能夠在 10 分鐘內理解 SDD 五大開發階段的完整流程
 - **SC-003**: 網站在桌面、平板、手機三種裝置上皆能正常顯示且易於閱讀
 - **SC-004**: 使用者點擊 Sidebar 項目後，內容區在 1 秒內完成切換
 - **SC-005**: 使用者點擊 GitHub Repository 按鈕後，能夠成功在新分頁開啟 GitHub 頁面
-- **SC-006**: 90% 的使用者能夠在首次造訪後，成功找到安裝步驟與 SSD 開發流程說明
+- **SC-006**: 90% 的使用者能夠在首次造訪後，成功找到安裝步驟與 SDD 開發流程說明
 - **SC-007**: 網站首次載入時間不超過 3 秒（在標準網路環境下）
 - **SC-008**: 所有使用者介面文字與內容皆為正體中文，無英文或簡體中文混雜
 

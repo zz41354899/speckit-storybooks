@@ -7,7 +7,7 @@
 
 ## Summary
 
-建立一個單頁式網站（SPA），作為 Spec Kit 安裝教學與 SSD 開發觀念的整合說明平台。網站使用 Vue 3 + Vite 建構，採用原生 CSS 撰寫樣式，包含 Header、Sidebar、主要內容區與 Footer 四大模組。使用者可透過 Sidebar 導覽切換不同內容區塊，學習 Spec Kit 的安裝方式與 SSD 五大開發階段。所有介面與文件使用正體中文，支援桌面與手機響應式設計。
+建立一個單頁式網站（SPA），作為 Spec Kit 安裝教學與 SDD 開發觀念的整合說明平台。網站使用 Vue 3 + Vite 建構，採用原生 CSS 撰寫樣式，包含 Header、Sidebar、主要內容區與 Footer 四大模組。使用者可透過 Sidebar 導覽切換不同內容區塊，學習 Spec Kit 的安裝方式與 SDD 五大開發階段。所有介面與文件使用正體中文，支援桌面與手機響應式設計。
 
 ## Technical Context
 
@@ -91,7 +91,7 @@ speckit-storybooks/
 │   │   │   ├── WhatIsSpecKit.vue   # 📦 Spec Kit 是什麼
 │   │   │   ├── HowToInstall.vue    # ⚙️ 如何安裝
 │   │   │   ├── WhyStorybook.vue    # 📐 為何結合 Storybook
-│   │   │   ├── SsdPrinciples.vue   # 🧭 SSD 開發五大原則
+│   │   │   ├── SsdPrinciples.vue   # 🧭 SDD 開發五大原則
 │   │   │   └── UserGuide.vue       # 📘 使用者指引範例
 │   │   │
 │   │   └── common/      # 共用元件
@@ -174,12 +174,12 @@ speckit-storybooks/
 - ✅ Link（連結）
 - ✅ CodeExample（程式碼範例）
 - ✅ Subsection（子區塊）
-- ✅ SsdPhase（SSD 階段）
+- ✅ SsdPhase（SDD 階段）
 
 ### 資料儲存結構
 - ✅ `src/data/navigationItems.js` - 導覽項目資料
 - ✅ `src/data/contentData.js` - 內容區塊資料
-- ✅ `src/data/ssdPhases.js` - SSD 階段資料
+- ✅ `src/data/ssdPhases.js` - SDD 階段資料
 
 ### 狀態管理設計
 - ✅ `useNavigation` composable - 導覽邏輯
@@ -300,7 +300,7 @@ src/
 - Spec Kit 是什麼
 - 如何安裝
 - 為何結合 Storybook
-- SSD 開發五大原則
+- SDD 開發五大原則
 - 使用者指引範例
 
 **技術細節**：
@@ -324,7 +324,7 @@ src/
      - Package（包裹）→ Spec Kit 是什麼
      - Settings（設定）→ 如何安裝
      - Layers（圖層）→ 為何結合 Storybook
-     - Compass（指南針）→ SSD 開發五大原則
+     - Compass（指南針）→ SDD 開發五大原則
      - BookOpen（開啟的書）→ 使用者指引範例
    - **理由**：提升視覺識別度，保持專業外觀，使用向量圖示確保跨裝置一致性
 
@@ -340,7 +340,7 @@ src/
    - **理由**：這些是 Spec Kit 和編輯器的工作目錄，包含臨時檔案和本地設定，不應納入版本控制
    - **說明**：確保專案倉庫保持乾淨，只包含必要的原始碼和文件
 
-6. **修正 SSD 五大階段**：
+6. **修正 SDD 五大階段**：
    - **原內容**：/specify、/plan、/task、/implement、/readme
    - **修正為**：/constitution、/specify、/plan、/task、/implement
    - **影響檔案**：
@@ -359,7 +359,7 @@ src/
      - **Spec Kit 是什麼**：
        - 新增「先思考，再動手」核心理念說明
        - 擴充核心價值說明（6 項）
-       - 新增 SSD 精神詳細說明（6 項優點）
+       - 新增 SDD 精神詳細說明（6 項優點）
        - 新增「與傳統開發方式的差異」對照表
        - 擴充適用場景（6 種情境）
        - 新增「誰適合使用 Spec Kit」說明
@@ -369,9 +369,9 @@ src/
        - 新增「第一次使用建議」（5 步驟）
        - 擴充專案憲章說明（5 項內容）
        - 新增常見問題（4 個 Q&A）
-     - **SSD 開發五大原則**：
-       - 新增「為什麼需要 SSD」說明
-       - 新增 SSD 核心原則（5 項）
+     - **SDD 開發五大原則**：
+       - 新增「為什麼需要 SDD」說明
+       - 新增 SDD 核心原則（5 項）
        - 保留五大階段卡片展示
      - **為何結合 Storybook**：
        - 新增 Storybook 簡介
@@ -392,7 +392,7 @@ src/
      - 包含實際範例與程式碼
      - 提供實用建議與最佳實踐
      - 回答常見問題
-   - **理由**：提供更完整、詳細的學習資源，讓使用者能深入理解 Spec Kit 與 SSD 開發流程
+   - **理由**：提供更完整、詳細的學習資源，讓使用者能深入理解 Spec Kit 與 SDD 開發流程
 
 8. **實作 Accordion 元件**：
    - **新增元件**：

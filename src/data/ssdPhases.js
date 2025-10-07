@@ -1,5 +1,5 @@
 /**
- * SSD 五大開發階段資料
+ * SDD 五大開發階段資料
  * 定義 Specification-Driven Development 的五個核心階段
  */
 export const ssdPhases = [

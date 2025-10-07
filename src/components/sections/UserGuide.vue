@@ -18,7 +18,7 @@ const faqs = [
   },
   {
     question: 'Q: 如何處理大型專案？',
-    answer: `將大型專案拆分為多個功能，每個功能獨立執行 SSD 流程。使用 Git 分支管理不同功能的開發。建議：
+    answer: `將大型專案拆分為多個功能，每個功能獨立執行 SDD 流程。使用 Git 分支管理不同功能的開發。建議：
       <ul>
         <li>每個功能建立獨立的分支（例如：<code>feature/user-login</code>）</li>
         <li>每個功能有獨立的規格文件目錄（例如：<code>specs/001-user-login/</code>）</li>
@@ -26,12 +26,12 @@ const faqs = [
       </ul>`
   },
   {
-    question: 'Q: 團隊成員不熟悉 SSD 怎麼辦？',
+    question: 'Q: 團隊成員不熟悉 SDD 怎麼辦？',
     answer: `建議從小型專案開始練習，讓團隊成員熟悉流程。可以：
       <ul>
-        <li>舉辦內部工作坊，示範完整的 SSD 流程</li>
+        <li>舉辦內部工作坊，示範完整的 SDD 流程</li>
         <li>建立團隊的最佳實踐文件</li>
-        <li>指定一位 SSD 專家協助團隊成員</li>
+        <li>指定一位 SDD 專家協助團隊成員</li>
         <li>定期檢視產生的文件，確保品質</li>
       </ul>`
   },

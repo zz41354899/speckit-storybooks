@@ -24,7 +24,7 @@ export const navigationItems = [
   },
   {
     id: 'ssd-principles',
-    label: 'SSD 開發五大原則',
+    label: 'SDD 開發五大原則',
     icon: 'Compass',
     order: 4
   },

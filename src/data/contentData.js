@@ -8,7 +8,7 @@ export const contentSections = {
     title: 'Spec Kit 是什麼',
     content: `
       <h2>Spec Kit 簡介</h2>
-      <p>Spec Kit 是一個協助開發團隊實踐<strong>規格驅動開發（Specification-Driven Development, SSD）</strong>的工具集。它透過 AI 輔助，讓開發者能夠用自然語言描述功能需求，自動產生結構化的規格文件、實作計畫與任務清單。</p>
+      <p>Spec Kit 是一個協助開發團隊實踐<strong>規格驅動開發（Specification-Driven Development, SDD）</strong>的工具集。它透過 AI 輔助，讓開發者能夠用自然語言描述功能需求，自動產生結構化的規格文件、實作計畫與任務清單。</p>
       
       <p>Spec Kit 的核心理念是「<strong>先思考，再動手</strong>」。透過完整的規劃流程，確保每一行程式碼都有明確的目的，每個功能都能追溯到原始需求。這不僅提升開發效率，更能大幅降低後期維護成本。</p>
       
@@ -22,8 +22,8 @@ export const contentSections = {
         <li><strong>風險控管</strong>：在開發前識別潛在問題，提早規劃解決方案，降低專案風險</li>
       </ul>
       
-      <h3>SSD 精神</h3>
-      <p>規格驅動開發（SSD）強調在撰寫程式碼前，先清楚定義功能需求與驗收標準。這種開發方式有以下優點：</p>
+      <h3>SDD 精神</h3>
+      <p>規格驅動開發（SDD）強調在撰寫程式碼前，先清楚定義功能需求與驗收標準。這種開發方式有以下優點：</p>
       <ul>
         <li><strong>需求明確</strong>：避免開發過程中頻繁變更需求，減少重工與時間浪費</li>
         <li><strong>目標清晰</strong>：每個功能都有明確的成功標準，開發者知道何時算是「完成」</li>
@@ -39,7 +39,7 @@ export const contentSections = {
           <tr style="background-color: var(--color-bg-secondary);">
             <th style="padding: 12px; border: 1px solid var(--color-border); text-align: left;">項目</th>
             <th style="padding: 12px; border: 1px solid var(--color-border); text-align: left;">傳統開發</th>
-            <th style="padding: 12px; border: 1px solid var(--color-border); text-align: left;">SSD 開發</th>
+            <th style="padding: 12px; border: 1px solid var(--color-border); text-align: left;">SDD 開發</th>
           </tr>
         </thead>
         <tbody>
@@ -182,14 +182,14 @@ export const contentSections = {
   
   'ssd-principles': {
     id: 'ssd-principles',
-    title: 'SSD 開發五大原則',
+    title: 'SDD 開發五大原則',
     content: `
-      <h2>什麼是 SSD？</h2>
-      <p><strong>Specification-Driven Development (SSD)</strong> 是一種以規格文件為核心的開發方法論。它強調在撰寫程式碼前，先用自然語言清楚定義功能需求、使用者故事與成功標準，確保開發方向明確且可追溯。</p>
+      <h2>什麼是 SDD？</h2>
+      <p><strong>Specification-Driven Development (SDD)</strong> 是一種以規格文件為核心的開發方法論。它強調在撰寫程式碼前，先用自然語言清楚定義功能需求、使用者故事與成功標準，確保開發方向明確且可追溯。</p>
       
-      <p>SSD 開發流程分為五個階段，每個階段都有明確的輸入與輸出，形成完整的開發循環。這五個階段環環相扣，確保從需求到實作的每一步都有清楚的記錄與追溯。</p>
+      <p>SDD 開發流程分為五個階段，每個階段都有明確的輸入與輸出，形成完整的開發循環。這五個階段環環相扣，確保從需求到實作的每一步都有清楚的記錄與追溯。</p>
       
-      <h3>為什麼需要 SSD？</h3>
+      <h3>為什麼需要 SDD？</h3>
       <p>傳統的開發方式常常遇到以下問題：</p>
       <ul>
         <li><strong>需求不明確</strong>：開發過程中頻繁變更需求，導致重工</li>
@@ -198,9 +198,9 @@ export const contentSections = {
         <li><strong>品質不穩定</strong>：缺乏統一的開發標準</li>
       </ul>
       
-      <p>SSD 透過系統化的流程解決這些問題，讓開發過程更加順暢、可控。</p>
+      <p>SDD 透過系統化的流程解決這些問題，讓開發過程更加順暢、可控。</p>
       
-      <h3>SSD 的核心原則</h3>
+      <h3>SDD 的核心原則</h3>
       <ol>
         <li><strong>規範先行</strong>：在撰寫程式碼前，先定義開發規範</li>
         <li><strong>需求明確</strong>：用結構化的方式描述功能需求</li>
@@ -301,10 +301,10 @@ npm run storybook</code></pre>
     title: '使用者指引範例',
     content: `
       <h2>完整開發流程示範</h2>
-      <p>以下展示一個完整的 SSD 開發流程，從功能描述到最終文件的實際案例。</p>
+      <p>以下展示一個完整的 SDD 開發流程，從功能描述到最終文件的實際案例。</p>
       
       <h3>範例：開發使用者登入功能</h3>
-      <p>假設我們要為一個網站開發使用者登入功能，以下是完整的 SSD 流程：</p>
+      <p>假設我們要為一個網站開發使用者登入功能，以下是完整的 SDD 流程：</p>
       
       <h4>階段 1：/constitution - 建立專案憲章</h4>
       <p><strong>輸入</strong>：</p>
@@ -404,7 +404,7 @@ npm run storybook</code></pre>
       </ul>
       
       <h3>總結</h3>
-      <p>Spec Kit 的 SSD 開發流程能夠：</p>
+      <p>Spec Kit 的 SDD 開發流程能夠：</p>
       <ul>
         <li>✅ 降低溝通成本，確保團隊理解一致</li>
         <li>✅ 提升開發效率，減少規劃時間</li>

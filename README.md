@@ -1,15 +1,15 @@
 # Speckit-Storybook 教學網站
 
-一個單頁式網站（SPA），作為 Spec Kit 安裝教學與 SSD 開發觀念的整合說明平台。
+一個單頁式網站（SPA），作為 Spec Kit 安裝教學與 SDD 開發觀念的整合說明平台。
 
 ## 專案簡介
 
 本網站提供完整的 Spec Kit 學習資源，包含：
 
-- **Spec Kit 是什麼**：介紹 Spec Kit 與 SSD 精神
+- **Spec Kit 是什麼**：介紹 Spec Kit 與 SDD 精神
 - **如何安裝**：詳細的安裝步驟與快速開始指南
 - **為何結合 Storybook**：說明設計與開發協作的最佳實踐
-- **SSD 開發五大原則**：完整的開發流程說明（/constitution、/specify、/plan、/task、/implement）
+- **SDD 開發五大原則**：完整的開發流程說明（/constitution、/specify、/plan、/task、/implement）
 - **使用者指引範例**：實際案例展示
 
 ## 技術堆疊
@@ -65,7 +65,7 @@ src/
 - ✅ 簡潔現代的視覺風格
 - ✅ 流暢的導覽體驗
 - ✅ 程式碼範例與複製功能
-- ✅ 完整的 SSD 開發流程說明
+- ✅ 完整的 SDD 開發流程說明
 
 ## 開發規範
 

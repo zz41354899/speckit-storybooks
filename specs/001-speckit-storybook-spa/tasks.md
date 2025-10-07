@@ -40,7 +40,7 @@
 - [x] T007 建立響應式樣式：在 `src/styles/responsive.css` 定義手機、平板、桌面三種斷點的響應式規則
 - [x] T008 在 `src/main.js` 匯入所有 CSS 檔案
 - [x] T009 [P] 建立導覽項目資料：在 `src/data/navigationItems.js` 定義 5 個導覽項目（包含 id、label、order）
-- [x] T010 [P] 建立 SSD 階段資料：在 `src/data/ssdPhases.js` 定義 5 個 SSD 開發階段（包含 id、command、title、purpose、operation、order）
+- [x] T010 [P] 建立 SDD 階段資料：在 `src/data/ssdPhases.js` 定義 5 個 SDD 開發階段（包含 id、command、title、purpose、operation、order）
 - [x] T011 建立導覽邏輯 composable：在 `src/composables/useNavigation.js` 實作 `activeSection`、`isSidebarOpen`、`navigateTo`、`toggleSidebar` 函式
 
 **Checkpoint**: Foundation ready - user story implementation can now begin in parallel
@@ -73,20 +73,20 @@
 
 ---
 
-## Phase 4: User Story 2 - 理解 SSD 五大開發階段 (Priority: P2)
+## Phase 4: User Story 2 - 理解 SDD 五大開發階段 (Priority: P2)
 
-**Goal**: 使用者能深入學習 SSD 開發流程的五個階段
+**Goal**: 使用者能深入學習 SDD 開發流程的五個階段
 
-**Independent Test**: 使用者點擊「🧭 SSD 開發五大原則」後，能夠看到 /specify、/plan、/task、/implement、/readme 五個階段的詳細說明
+**Independent Test**: 使用者點擊「🧭 SDD 開發五大原則」後，能夠看到 /specify、/plan、/task、/implement、/readme 五個階段的詳細說明
 
 ### Implementation for User Story 2
 
-- [x] T025 [US2] 建立「SSD 開發五大原則」內容資料：在 `src/data/contentData.js` 新增 `ssd-principles` 區塊資料，整合 `ssdPhases.js` 的五個階段
-- [x] T026 [US2] 建立 SsdPrinciples 內容元件：在 `src/components/sections/SsdPrinciples.vue` 建立「🧭 SSD 開發五大原則」內容區塊，依序顯示五個階段
-- [x] T027 [US2] 為每個 SSD 階段建立子元件或區塊：在 SsdPrinciples 元件中，為每個階段顯示階段名稱、用途說明、操作方式
-- [x] T028 [US2] 確保 SSD 內容在手機裝置上正常顯示：調整 SsdPrinciples 元件的響應式樣式
+- [x] T025 [US2] 建立「SDD 開發五大原則」內容資料：在 `src/data/contentData.js` 新增 `ssd-principles` 區塊資料，整合 `ssdPhases.js` 的五個階段
+- [x] T026 [US2] 建立 SsdPrinciples 內容元件：在 `src/components/sections/SsdPrinciples.vue` 建立「🧭 SDD 開發五大原則」內容區塊，依序顯示五個階段
+- [x] T027 [US2] 為每個 SDD 階段建立子元件或區塊：在 SsdPrinciples 元件中，為每個階段顯示階段名稱、用途說明、操作方式
+- [x] T028 [US2] 確保 SDD 內容在手機裝置上正常顯示：調整 SsdPrinciples 元件的響應式樣式
 
-**Checkpoint**: At this point, User Stories 1 AND 2 should both work independently. 使用者可以完整瀏覽 SSD 五大開發階段的說明。
+**Checkpoint**: At this point, User Stories 1 AND 2 should both work independently. 使用者可以完整瀏覽 SDD 五大開發階段的說明。
 
 ---
 
@@ -98,7 +98,7 @@
 
 ### Implementation for User Story 3
 
-- [x] T029 [US3] 建立「為何結合 Storybook」內容資料：在 `src/data/contentData.js` 新增 `why-storybook` 區塊資料（包含設計與開發共用視覺規格的重要性、Storybook 視覺化 SSD 文件、團隊協作好處）
+- [x] T029 [US3] 建立「為何結合 Storybook」內容資料：在 `src/data/contentData.js` 新增 `why-storybook` 區塊資料（包含設計與開發共用視覺規格的重要性、Storybook 視覺化 SDD 文件、團隊協作好處）
 - [x] T030 [US3] 建立 WhyStorybook 內容元件：在 `src/components/sections/WhyStorybook.vue` 建立「📐 為何結合 Storybook」內容區塊
 
 **Checkpoint**: At this point, User Stories 1, 2 AND 3 should all work independently. 使用者可以理解 Storybook 整合的價值。
@@ -248,7 +248,7 @@ With multiple developers:
 
 **Tasks by User Story**:
 - US1 (P1): 13 tasks - MVP 核心功能
-- US2 (P2): 4 tasks - SSD 開發流程說明
+- US2 (P2): 4 tasks - SDD 開發流程說明
 - US3 (P3): 2 tasks - Storybook 整合說明
 - US4 (P4): 4 tasks - 實作範例展示
 
