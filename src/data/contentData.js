@@ -221,7 +221,7 @@ export const contentSections = {
       <p>當 Spec Kit 負責「定義做什麼」時，Storybook 則負責「展示怎麼做」。兩者結合，形成從需求到視覺化的完整鏈路。</p>
       
       <h3>Storybook 是什麼？</h3>
-      <p>Storybook 是一個開源的前端工作坊，用於獨立開發 UI 元件。它提供：</p>
+      <p>Storybook 是一個開源的 UI 元件開發與文件化工具。它提供：</p>
       <ul>
         <li><strong>隔離環境</strong>：在不啟動整個應用程式的情況下開發元件</li>
         <li><strong>互動式文件</strong>：自動產生元件的使用文件與範例</li>
